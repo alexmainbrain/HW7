@@ -1,0 +1,63 @@
+body {
+  color: white
+  margin: 0;
+}
+
+.set {
+  text-align: center;
+    padding-top: 50px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+button {
+  height: 300px;
+  width: 60px;
+  background-color: white;
+  border-radius: 20px;
+  padding-top: 200px;
+}
+.keyPress{
+  transform: scale(1.05);
+  border: 3px solid rgb(64,134,117);
+}
+
+
+html {
+    width: 100%;
+    height: 100%;
+    position: relative;
+ 
+    -webkit-animation-name: myfirst;
+    -webkit-animation-duration: 35s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+    
+    animation-name: myfirst;
+    animation-duration: 35s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+ 
+
+@-webkit-keyframes myfirst {
+    0%   {background:yellow;}
+    25%  {background:red;}
+    50%  {background:blue;}
+    75%  {background:green;}
+    100% {background:yellow;}
+}
+ 
+@keyframes myfirst {
+    0%   {background:yellow;}
+    25%  {background:red;}
+    50%  {background:blue;}
+    75%  {background:green;}
+    100% {background:yellow;}
+}
